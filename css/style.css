@@ -1,0 +1,445 @@
+
+/* ^ general styling */
+@font-face {
+    font-family: montserrat;
+    src: url(../Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family:pooppins ;
+    src: url(../Poppins/Poppins-Light.ttf);
+}
+
+h1 , h2 , h3 , h4 ,h5{
+    font-family: montserrat;
+}
+
+body{
+    font-family:pooppins ;
+}
+
+.tittle h2::before{
+    content: "";
+    
+    background-image: url(/images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    z-index: -1;
+    bottom: -10px;
+    left: 0;
+
+}
+
+.tittle h2{
+    font-weight: 900;
+    font-size: 60px;
+}
+/* ^  end genaral styling */
+
+/* ^ navbar styling */
+
+
+.navbar-nav .nav-link.active::after{
+    content:"" ;
+    width: 70%;
+    position: absolute;
+    height: 1px;
+    background-color: white;
+    bottom: 0;
+    left: 10px;
+}
+
+@media screen and (min-width :600px) and (max-width:993px){
+    .navbar-nav .nav-link.active::after{
+        width: 0%;
+        padding: 0%;
+    }
+    
+}
+
+/* ^ end navbar styling  */
+
+/* header style */
+.header{
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.header .overlay{
+    background-color: rgba(0, 0,0, .7);
+    height: 100%;
+    width: 100%;
+}
+
+.header span::after{
+    content: " |";
+    animation-name:typing ;
+    animation-duration: 8s ;
+    animation-iteration-count: infinite;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+@keyframes typing {
+    0%{content: " D |"}
+    2%{content: " De |"}
+    4%{content: " Dev |"}
+    6%{content: " Deve |"}
+    8%{content: " Devel |"}
+    10%{content: " Develo |"}
+    12%{content: " Develop |"}
+    14%{content: " Develope |"}
+    16%{content: " Developer |"}
+    18%{content: " Develope |"}
+    20%{content: " Develop |"}
+    22%{content: " Develo |"}
+    24%{content: " Devel |"}
+    26%{content: " Deve |"}
+    28%{content: " Dev |"}
+    30%{content: " De |"}
+    32%{content: " D |"}
+    34%{content: " |"}
+    36%{content: " D |"}
+    38%{content: " De |"}
+    40%{content: " Des |"}
+    42%{content: " Desi |"}
+    44%{content: " Desig |"}
+    46%{content: " Design |"}
+    48%{content: " Designe |"}
+    50%{content: " Designer |"}
+    52%{content: " Designe |"}
+    54%{content: " Design |"}
+    56%{content: " Desig |"}
+    58%{content: " Desi |"}
+    60%{content: " Des |"}
+    62%{content: " De |"}
+    64%{content: " D |"}
+    68%{content: " |"}
+    70%{content: " l |"}
+    72%{content: " la |"}
+    74%{content: " lar |"}
+    76%{content: " larr |"}
+    78%{content: " larry |"}
+    80%{content: " larry D |"}
+    82%{content: " larry Da |"}
+    84%{content: " larry Dan |"}
+    86%{content: " larry Dani |"}
+    88%{content: " larry Danie |"}
+    90%{content: " larry Daniel |"}
+    90%{content: " larry Daniels |"} 
+
+    
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* end header style */
+
+
+/* & about style */
+
+.about .img-about::before{
+    content: "";
+    background-image: url(/images/dots.png);
+    position: absolute;
+    background-repeat: repeat;
+    
+    width: 100%;
+    left: -30px;
+    bottom: -30px;
+    height: 100%;
+    z-index: -1;
+    
+
+    
+}
+.about .progress {
+   
+    height: 2rem;
+  
+}
+.about .progress span{
+    
+    font-size: 1rem;
+    
+   
+}
+
+.about .progress h2{
+  
+    font-size: 16px;
+    top: 5px;
+    left: 4px;
+}
+.about .btn-about .btn-down{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    
+}
+.about .btn:hover {
+    background-color: black;
+}
+.about .btn-down:hover {
+    background-color:white;
+    color: #343434
+}
+.about .progress{
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5) inset;
+}
+
+ /* end about style */
+
+
+ /* & start services style */
+ .services .icon-card{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #f4f4f4;
+ }
+ .services .card-text{
+    letter-spacing: 2px;
+    font-size: 16px;
+ }
+ .services .icon-card{
+    transition: all .5s;
+ }
+
+.services .card:hover{
+     .icon-card{
+    background-color: black;}
+    
+
+}
+.services .card:hover{
+    .icon-card i{
+   color: white;}
+   
+
+}
+/* ^ end services style */
+
+/* & style portofolio  */
+#portofolio .nav-tabs .nav-link.active , 
+#portofolio .nav-tabs .nav-link {
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 800;
+}
+#portofolio .nav-tabs {
+    border: none;
+}
+#portofolio .nav-tabs .nav-link {
+    position: relative;
+    padding: 0%;
+   
+}
+#portofolio .nav-tabs .nav-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s all;
+
+}
+#portofolio .nav-tabs .nav-link:hover::after{
+   width: 100%;
+
+}
+#portofolio .nav-tabs .nav-link.active::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s all;
+
+}
+
+#portofolio .layer{
+  background-color: rgba(255, 255, 255, 0.95);
+  
+  opacity: 0;
+  transition: all .5s;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  z-index: 2;
+  transform: translateY(10px);
+  
+  
+
+}
+
+#portofolio .icon-layer .icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: black;
+
+}
+
+
+#portofolio .card:hover .layer{
+    opacity: 1;
+    transform: translateY(0);
+}
+#portofolio .card .layer {
+    transition: all .5s;
+}
+#portofolio .icon-layer .icon:hover {
+   
+    background-color:white;
+    color:black;
+    border: 1px solid black;
+
+}
+
+
+#portofolio .icon-layer .icon{
+    transition: 1s all;
+}
+
+
+/* ^ start carousel style */
+
+#carousel .item-car{
+    background-color: #f7f7f7;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+#carousel .img-car{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+#carousel .carousel-indicators{
+    top:110%
+}
+#carousel .carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    background: #585656;
+    border-radius: 50%;
+    margin: 5px 10px;
+    
+}
+
+/* ^ start team style */
+
+#team .card .layer{
+    background-color:rgba(255, 255, 255, 0.90);
+    position:absolute;
+    width:50%;
+    height:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) rotateY(180deg);
+    transition:0.5s all;
+    opacity:0;
+    
+}
+#team .card .layer .icon{
+    background-color:black;
+    color:white;
+    width:2rem;
+    height:2rem;
+    margin-right:5px;
+    transition:0.5s all;
+    border-radius: 50%;
+    
+}
+#team .item:hover .layer{
+    transform:translate(-50%,-50%) rotateY(0) scale(1.9);
+    opacity:1;
+}
+#team .card-img:hover .layer{
+    transform:translate(-50%,-50%) rotateY(0) scale(1.95);
+    opacity:1;
+    
+}
+#team .card-img img{transition:0.5s all;}
+#team .card-img:hover img{
+    transform:scale(1.3);
+    
+}
+#team .item .icon:hover{
+    background-color:white;
+    color:black;
+    border:1px solid black;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+    
+.team .caption {
+    background-color: #f7f7f7;
+}
+.team .card-body{
+    background-color: #343434;;
+}
+
+/* ^ end team style */
+
+/* & start contact style */
+.contact .icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #f4f4f4;
+ }
+
+
+.contact .inner:hover .icon{
+    background-color: black;
+
+}
+.contact .inner:hover .icon i{
+    color: white;
+}
+.contact .inner .icon{
+    transition: 1s all;
+}
+.form-control:focus {
+  
+    border: none;
+   
+    box-shadow: none;
+}
+
+.contact .btn-contact .btn-down{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+.contact .btn-down:hover {
+    background-color:white;
+    color: #343434
+}
+
+.contact .btn-contact .btn-down{
+    transition: all 1s;
+}
+
+.footer{
+    background-color: #333;;
+}
